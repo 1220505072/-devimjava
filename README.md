@@ -2,7 +2,7 @@
 **AÇIKLAMA:** <br>
 Bu Proje, 4x4 düğme paneline sahip, Java Swing kullanarak basit bir GUI oluşturmanın ve özel bir JButton sınıfı oluşturmanın bir örneğidir (GUI) için özel olarak tasarlanmış bir CustomButton sınıfı içerir. Her buton özelleştirilebilir(rengi, simgesi ve GraphQL şeması). Her buton, bir GraphQL şemasını temsil eder ve tıklanabilir durumda veya pasif durumda olabilir. <br>
 **KODUN KULLANIMI VE TESTİ:** <br>
-1.Projeyi çalıştırın böylece ekranınıza 4x4 16 tane buton gelecek.<br>
+1.Projeyi çalıştırın böylece ekranınızda 4x4 16 tane buton gelecek.<br>
 2.Ekrana gelen butonlar pasif renk (mavi) ve pasif simge ile ekrana gelecek. <br>
 3.Herhangibir butona tıkladığınızda buton aktif renk (kırmızı) rengini alacak ve pasif simge yerine de aktif simge gelecek.<br>
 4.Birinci butona aktifken tıklandığında diğer aktif olan butonlar soruda istenildiği gibi pasif hale dönecek yani pasif renk ve pasif simge olarak güncellenecek<br>
@@ -147,11 +147,11 @@ class CustomButton extends JButton {
     }
 }
 
-**4*4 lük 16 tane pasif buton**
+**.Projeyi çalıştırınca 4x4 16 tane buton yer alıyor, ekrana gelen butonlar pasif renk (mavi) ve pasif simge ile ekrana geliyork**
 ![Ekran görüntüsü 2023-12-10 202011](https://github.com/1220505072/-devimjava/assets/127992796/f45d48b8-acaf-4409-b8b4-79f19cf36472)
-**tıklanılan buton aktif oluyor**
+**Herhangibir butona tıkladığınızda buton aktif renk (kırmızı) rengini alıyor ve pasif simge yerine de aktif simge geliyor**
 ![Ekran görüntüsü 2023-12-10 202027](https://github.com/1220505072/-devimjava/assets/127992796/0b4c016f-1c6f-440b-8dfe-8fdd6a27f77d)
-**birinci buton aktifken tıklayınca diğer aktif butonlar pasif oluyor**
+**Birinci butona aktifken tıklandığında diğer aktif olan butonlar soruda istenildiği gibi pasif hale dönüyor yani pasif renk ve pasif simge olarak güncelleniyor**
 ![Ekran görüntüsü 2023-12-10 202044](https://github.com/1220505072/-devimjava/assets/127992796/b95209f2-cced-45ad-beb7-13f89575f762)
 
 
