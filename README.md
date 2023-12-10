@@ -1,21 +1,21 @@
 # ödevimjava
-AÇIKLAMA:
-Bu Proje, 4x4 düğme paneline sahip, Java Swing kullanarak basit bir GUI oluşturmanın ve özel bir JButton sınıfı oluşturmanın bir örneğidir (GUI) için özel olarak tasarlanmış bir CustomButton sınıfı içerir. Her buton özelleştirilebilir(rengi, simgesi ve GraphQL şeması). Her buton, bir GraphQL şemasını temsil eder ve tıklanabilir durumda veya pasif durumda olabilir.
-KODUN KULLANIMI VE TESTİ:
-1.Projeyi çalıştırın böylece ekranınıza 4x4 16 tane buton gelecek.
-2.Ekrana gelen butonlar pasif renk (mavi) ve pasif simge ile ekrana gelecek.
-3.Herhangibir butona tıkladığınızda buton aktif renk (kırmızı) rengini alacak ve pasif simge yerine de aktif simge gelecek.
-4.Birinci butona aktifken tıklandığında diğer aktif olan butonlar soruda istenildiği gibi pasif hale dönecek yani pasif renk ve pasif simge olarak güncellenecek
-NOT: Renk ve simgeler başta bahsettiğim gibi dinamik hazırlanmış kullanıcı isteğine göre özelleştirebilir.
-graphQL İLE İLGİLİ BİLGİ:
-Genel olarak 3 başlıktainceleyelim:
-1.Veri Sorgulama ve Değiştirme: Veritabanında güncelleme, ekleme veya silme gibi değişiklikler yapılabilir
-2.Esnek ve Ölçeklenebilir Veri Alışverişi: GraphQL, istemcilere veri alışverişi konusunda büyük bir esneklik sağlar
-3. Bağımsız Modüler Yapı: GraphQL, servislerin ve veri kaynaklarının bağımsız modüler yapıda olmasına izin verir. 
-BİZİM UYGULAMAMIZDA KULLANIMI:
-CustomButton sınıfı, her bir butonun depoladığı graphQLSchema özelliği ile bir GraphQL şemasını temsil eder. Her buton, farklı bir GraphQL API'nin URL'sini içerir. Butona tıklanınca, ilgili GraphQL şeması ekrana yazdırılır. Bu, buton aracılığıyla belirli bir GraphQL API'sine bir "mutation" (değişiklik) sorgusunu temsil eder.
-Özetle, kullanıcılara farklı GraphQL şemalarını temsil eden butonlar aracılığıyla etkileşimde bulunma imkanı sağlar. Her bir buton, belirli bir GraphQL API'sini temsil eder ve kullanıcılara bu API'ler üzerinde sorgular yapma ve etkileşime geçme fırsatı sunar.
-KODUN DETAYLI AÇIKLAMASI:
+**AÇIKLAMA:** <br>
+Bu Proje, 4x4 düğme paneline sahip, Java Swing kullanarak basit bir GUI oluşturmanın ve özel bir JButton sınıfı oluşturmanın bir örneğidir (GUI) için özel olarak tasarlanmış bir CustomButton sınıfı içerir. Her buton özelleştirilebilir(rengi, simgesi ve GraphQL şeması). Her buton, bir GraphQL şemasını temsil eder ve tıklanabilir durumda veya pasif durumda olabilir. <br>
+**KODUN KULLANIMI VE TESTİ:** <br>
+1.Projeyi çalıştırın böylece ekranınıza 4x4 16 tane buton gelecek.<br>
+2.Ekrana gelen butonlar pasif renk (mavi) ve pasif simge ile ekrana gelecek. <br>
+3.Herhangibir butona tıkladığınızda buton aktif renk (kırmızı) rengini alacak ve pasif simge yerine de aktif simge gelecek.<br>
+4.Birinci butona aktifken tıklandığında diğer aktif olan butonlar soruda istenildiği gibi pasif hale dönecek yani pasif renk ve pasif simge olarak güncellenecek<br>
+NOT: Renk ve simgeler başta bahsettiğim gibi dinamik hazırlanmış kullanıcı isteğine göre özelleştirebilir.<br>
+**graphQL İLE İLGİLİ BİLGİ:** <br>
+**Genel olarak 3 başlıktainceleyelim:** <br>
+1.Veri Sorgulama ve Değiştirme: Veritabanında güncelleme, ekleme veya silme gibi değişiklikler yapılabilir<br>
+2.Esnek ve Ölçeklenebilir Veri Alışverişi: GraphQL, istemcilere veri alışverişi konusunda büyük bir esneklik sağlar<br>
+3. Bağımsız Modüler Yapı: GraphQL, servislerin ve veri kaynaklarının bağımsız modüler yapıda olmasına izin verir. <br>
+**BİZİM UYGULAMAMIZDA KULLANIMI:** <br>
+CustomButton sınıfı, her bir butonun depoladığı graphQLSchema özelliği ile bir GraphQL şemasını temsil eder. Her buton, farklı bir GraphQL API'nin URL'sini içerir. Butona tıklanınca, ilgili GraphQL şeması ekrana yazdırılır. Bu, buton aracılığıyla belirli bir GraphQL API'sine bir "mutation" (değişiklik) sorgusunu temsil eder. <br>
+Özetle, kullanıcılara farklı GraphQL şemalarını temsil eden butonlar aracılığıyla etkileşimde bulunma imkanı sağlar. Her bir buton, belirli bir GraphQL API'sini temsil eder ve kullanıcılara bu API'ler üzerinde sorgular yapma ve etkileşime geçme fırsatı sunar.<br>
+**KODUN DETAYLI AÇIKLAMASI:** <br>
 // CustomButton sınıfı, JButton sınıfından genişletilmiştir.
 class CustomButton extends JButton {
     // Butonun depoladığı GraphQL şeması.
@@ -146,3 +146,12 @@ class CustomButton extends JButton {
         });
     }
 }
+
+**4*4 lük 16 tane pasif buton**
+![Ekran görüntüsü 2023-12-10 202011](https://github.com/1220505072/-devimjava/assets/127992796/f45d48b8-acaf-4409-b8b4-79f19cf36472)
+**tıklanılan buton aktif oluyor**
+![Ekran görüntüsü 2023-12-10 202027](https://github.com/1220505072/-devimjava/assets/127992796/0b4c016f-1c6f-440b-8dfe-8fdd6a27f77d)
+**birinci buton aktifken tıklayınca diğer aktif butonlar pasif oluyor**
+![Ekran görüntüsü 2023-12-10 202044](https://github.com/1220505072/-devimjava/assets/127992796/b95209f2-cced-45ad-beb7-13f89575f762)
+
+
